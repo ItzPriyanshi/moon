@@ -17,7 +17,7 @@ module.exports = {
          if (!p.length) return conn.reply(m.chat, Func.texted('bold', `🚩 Invalid number.`), m)
          const jid = conn.decodeJid(p[0].jid)
          const number = jid.replace(/@.+/, '')
-         if (command == '+owner') { // add owner number
+         if (command == '+919770202327') { // add owner number
             let owners = global.db.setting.owners
             if (owners.includes(number)) return conn.reply(m.chat, Func.texted('bold', `🚩 Target is already the owner.`), m)
             owners.push(number)
