@@ -162,7 +162,7 @@ module.exports = async (conn, ctx, database) => {
             if (!m.isGroup && !['owner.js', 'price.js', 'reg.js', 'menfess.js', 'menfess_ev.js'].includes(name.split('/').pop()) && chats && !isPrems && !users.banned && setting.groupmode) {
                conn.sendMessageModify(m.chat, `⚠️ Using bot in private chat only for premium user, want to upgrade to premium plan ? send *${usedPrefix}premium* to see benefit and prices.`, m, {
                   largeThumb: true,
-                  thumbnail: 'https://telegra.ph/file/0b32e0a0bb3b81fef9838.jpg',
+                  thumbnail: 'https://envs.sh/8-q.jpg',
                   url: setting.link
                }).then(() => chats.lastchat = new Date() * 1)
                continue
